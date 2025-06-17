@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-style: Arial, Helvetica, sans-serif;
+  font-style: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .container {
   display: flex;
@@ -21,16 +21,13 @@ html, body {
     background-repeat: no-repeat;
 }
 .right {
-    background-color: rgb(209, 209, 228);
-    flex: 0 0 65%; 
+    background-color: rgb(230, 233, 233);
+    flex: 0 0 65%;
     padding: 0;
     box-sizing: border-box;
-
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    flex-wrap: wrap;
     flex-direction: column;
+    height: 100vh;
 }
 
 .box{
@@ -39,9 +36,59 @@ html, body {
 .info{
     padding: 10px;
 }
-.info, .login {
-    background-color: rgb(230, 233, 233);
+.info, .login, .article {
+    background-color: #fbfbfb;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: auto;
 }
 .login-form {
     background-color: white;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    width: 100%;   /* veya istediğin sabit genişlik */
+    box-sizing: border-box;
 }
+#box {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+}
+.notice, .form-bar{
+    width: 500px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-right: 20%;
+    font-size: small;
+    background-color: #fbfbfb;
+    padding: 10px 20px 20px 40px;
+}
+.form-bar {
+    margin-top: 5px;
+    background-color: white;
+}
+.notice {
+    font-size: large;
+    margin-left: 0;
+    width: 550px;
+    margin: 0;
+     
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1 1 45%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
